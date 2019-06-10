@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H&M - WORK TASK</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="description" content="UX/UI Work Task provided by H&M" />
+    <meta name="keywords" content="UX,UI,HTML,CSS,JavaScript" />
+    <meta name="author" content="Umasankar" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>WORK TASK</h1>
+
+    <h3>1: CSS-wizardry</h3>
+    <button class="btn-delete" aria-label="After clicking on button item will be deleted">Delete</button>
+
+    <h2> Search Dropdown to find the countries</h2>
+
+    <div class="autocomplete-selection">
+      <div class="dropdown">
+      <input id="autocompleteTextBox" 
+        type="text"
+        placeholder="Search.."
+        onkeyup="getValue(this.value)"
+      />
+      <i class="icons material-icons close-dropdown" onclick="clearVal()" title="Close">close</i>
+      <button class="icons material-icons search-button" title="Search" onclick="searchHistory()">search</button>
+      <ul class="result dropdown-content" id="result"></ul>
+    </div>
+      <div class="history-container" id="history">
+        <h4>Search History</h4>
+        <div onclick="clearList()" class="clear-list">
+          Clear Search History
+        </div>
+      </div>
+      <ul id="resultFinal"></ul>
+
+      
+
+    </div>
+
+    <h3>2: QA</h3>
+    <p class="question">A. Please write your full name</p>
+    <p>Umasankar Gothandaraman</p>
+
+    <p class="question">
+      B. How would you describe the difference between HTML, CSS and Javascript?
+    </p>
+    <p>
+      HTML is a structural language that build the structure of a website as the
+      skeletal system form the structure of the human body. Heading, paragraphs,
+      images, text all are the part of HTML that creates the basic structure of
+      a website.
+    </p>
+
+    <p>
+      CSS is a styling language that gives styling of a website. With the help
+      of front color, background color and border styling CSS furnishes the look
+      of the site as the skin gives look to the human body.
+    </p>
+
+    <p>
+      JavaScript is a programming language that gives motion and logics to the
+      website for example a popup window alert. It is just like the motion of
+      human body.
+    </p>
+
+    <p class="question">
+      C. How would you briefly describe frontend to someone who has no
+      experience of it?
+    </p>
+    <p>
+      Frontend is the Presentation layer of any device like computer, mobile or
+      tablets where the users can see, feel and experience the application.
+    </p>
+
+    <p class="question">
+      D. Why is semantically correct HTML important?
+    </p>
+    <p>
+      Because, Semantic HTML allows you to talk to search engines to call out
+      exactly what your website is about , which in turn helps the user to land
+      in your webpage.
+    </p>
+
+    <!-- <h3>3: Simple Search</h3> -->
+  
+    <script type="text/javascript" src="autocomplete.js"></script>
+  </body>
+</html>

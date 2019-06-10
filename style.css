@@ -1,0 +1,284 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Material+Icons');
+html,
+body {
+  color: #24292e;
+  /* font-family: "HM Ampersand"; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 20px 50px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h1 {
+  border-bottom: 1px #eaecef solid;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  border-top: 1px #eaecef solid;
+  clear: both;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 25px 0 0;
+  padding: 15px 0 25px;
+}
+
+h3:first-of-type {
+  border: 0;
+}
+
+hr {
+  border-bottom: 1px #eaecef solid;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* .btn-delete {
+  font-size: 42px;
+  font-weight: bold;
+  width: 270px;
+  height: 142px;
+  background: url(delete.svg) no-repeat;
+  background-position: bottom 17px right 14px;
+  background-color: #f1a75a;
+  background-size: 105px;
+  text-align: left;
+  vertical-align: middle;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #88817a;
+  padding-left: 17px;
+} */
+
+.question {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.question:first-of-type {
+  margin: 0;
+}
+
+.autocomplete-selection {
+}
+
+.autocomplete-selection ul li {
+  list-style-type: none;
+  font-family: "HM Ampersand";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 10px !important;
+}
+
+.autocomplete-selection input {
+  border: 1px solid #ddd;
+  height: 45px;
+  width: 99%;
+  outline: 0;
+  padding-left: 1%;
+  font-size: 16px;
+}
+
+.history-container {
+  width: 96%;
+  padding: 20px 2%;
+  background-color: #f6f6f6;
+	font-size: 14px;
+	margin: 10px 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-size: 25px;
+  margin-bottom:0;
+}
+
+.history-container h4 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul.result {
+  background: #f5f5f5;
+  margin-top: 0;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-height: 300px;
+  overflow: auto;
+  border-top: 0 !important;
+  background: #fff;
+  z-index: 14;
+}
+
+ul#resultFinal {
+  width: 101%;
+  padding: 0;
+  z-index: 10;
+  margin:0;
+  background: #f6f6f6;
+}
+
+span.spanCls {
+  float: right;
+  color: #949292;
+  font-size: 13px;
+  position: relative;
+  padding-left: 12px;
+}
+
+span.spanCls:first-child {
+  cursor: pointer;
+}
+
+ul#resultFinal li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
+
+ul#resultFinal li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.closeButton {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+ul.result li {
+  cursor: pointer;
+}
+
+.clear-list {
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #666;
+  font-weight: bold;
+}
+
+
+/*Button Style CSS*/
+.btn-delete {
+	background-color: #ffa042;
+	border: 2px solid #666;
+	color: #333;
+	padding: 20px 60px 20px 10px;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	outline: none;
+	position: relative;
+	min-width: 140px;
+	cursor: pointer;
+}
+.btn-delete::after {
+	 position: absolute;
+	 color:#333;
+	 content: "x";
+	 display: block;
+	 width: 39px;
+	 height: 38px;
+	 border-radius: 100%;
+	 -webkit-border-radius: 100%;
+	 -moz-border-radius: 100%;
+	 right: 18px;
+    top: 8px;
+    background: #fff;
+    font-size: 31px;
+    text-align: center;
+    padding: 1px 0 0 0;
+    font-weight: bold;
+    padding-top: 0px;
+}
+ @media (max-width: 568px) {
+	 button {width: 100%;}
+	 
+	 .main-wrap { padding:20px 16px;}
+	 
+	 button.search-button { width: auto;}
+}
+/* Styles*/
+.search-box {
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 14px 20px 12px 15px;
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ccc;
+}
+
+.drop-btn:focus {outline: none;}
+
+.dropdown { position: relative;width:100%;padding-right: 11px;}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    z-index: 1;
+    top: 49px;
+    width: calc(100% - 2px);
+    margin: 0;
+    padding: 0;
+}
+
+
+.dropdown-content li {
+	color: #555;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content li strong {
+	background: lightyellow
+}
+.show {display: block; }
+
+.icons {
+	position: absolute;
+    right: 12px;
+    top: 4px;
+    font-size: 19px;
+    color: #999;
+	padding: 10px;
+	cursor: pointer;
+}
+ 
+i.icons {
+	right: 55px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.align-left {
+	text-align: left
+}
+
+.align-right {
+	text-align: right
+}
+.closeIcon{
+	font-size: 18px !important;
+    font-weight: normal !important;
+    top: -3px !important;
+}
+/*Ends here*/
